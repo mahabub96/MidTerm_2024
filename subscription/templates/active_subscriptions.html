@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Active Subscriptions</title>
+</head>
+<body>
+    <h1>Active Subscriptions</h1>
+    <ul>
+        {% for subscription in active_subs %}
+            <li>{{ subscription.user }}: {{ subscription.start_date }} - {{ subscription.end_date }}</li>
+        {% empty %}
+            <li>No active subscriptions.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
