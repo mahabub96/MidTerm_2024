@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Subscription(models.Model):
-    user = models.CharField(max_length=100)  # Just a string for simplicity
+    user = models.CharField(max_length=100)  
     start_date = models.DateField()
     end_date = models.DateField()
 
